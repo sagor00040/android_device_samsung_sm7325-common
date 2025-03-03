@@ -18,6 +18,9 @@ COMMON_PATH := device/samsung/sm7325-common
 
 DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
 
+# Include some extras if they exist
+-include $(COMMON_PATH)/extras.mk
+
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
